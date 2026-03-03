@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Haq Software | Software Company Moradabad</title>
+    <meta name="description" content="Learn about Haq Software, a leading software development and digital marketing company based in Moradabad, India.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.haqsoftware.com/about.html">
+    <script src="anti-inspect.js" defer></script>
+</head>
+<body>
+    <!-- Top Bar (same as index) -->
+    <div class="top-bar">
+        <!-- copy from index -->
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="mailto:info@haqsoftware.com" class="contact-link"><i class="fas fa-envelope"></i> info@haqsoftware.com</a>
+                    <a href="tel:+919548192906" class="contact-link"><i class="fas fa-phone-alt"></i> +91 95481 92906</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation (same) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Haq<span>Software</span></a>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="about.html" class="nav-link active">ABOUT</a>
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Haq Software</h1>
+            <p>Your partner in digital transformation from Moradabad</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in Moradabad, Haq Software began with a mission to provide top‑notch software development and digital marketing services to local businesses and beyond. We understand the unique challenges of the Indian market and deliver solutions that work.</p>
+                    <p>Our team of experienced developers, designers, and marketers work together to create websites, software, and campaigns that drive real results. We take pride in our client‑centric approach and long‑term partnerships.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Team meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Haq Software?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time Delivery</h3>
+                    <p>We respect deadlines and deliver projects promptly.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Experienced Team</h3>
+                    <p>Skilled professionals with years of industry experience.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>High‑quality solutions at competitive rates.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>We’re always here to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- same as index footer -->
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Haq Software</h3>
+                    <p>Innovative software & marketing solutions from Moradabad, India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Moradabad, Uttar Pradesh, India</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919548192906">+91 95481 92906</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@haqsoftware.com">info@haqsoftware.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Haq Software. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navLinks');
+            const btn = document.querySelector('.mobile-menu-btn');
+            if (nav && btn && !nav.contains(event.target) && !btn.contains(event.target)) nav.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
